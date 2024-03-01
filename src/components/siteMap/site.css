@@ -1,0 +1,9 @@
+.Site-text {
+  display: flex;
+  color: white;
+  flex-flow: column;
+}
+
+.text-1 {
+  width: 80%;
+}

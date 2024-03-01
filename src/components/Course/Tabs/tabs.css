@@ -1,0 +1,32 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+}
+
+.tab-unactive {
+  padding: 0.5rem;
+  border: 1px solid var(--grey);
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: white;
+  background-color: var(--lightBlack);
+}
+
+.tab-active {
+  padding: 0.5rem;
+  border-top: 2px;
+  border-left: 1px;
+  border-right: 1px;
+  border-bottom: 0;
+  border-style: solid;
+  border-color: var(--grey);
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: white;
+  background-color: var(--buttonBlack);
+}
+
+input {
+  position: absolute;
+  z-index: -1;
+}

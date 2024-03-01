@@ -1,27 +1,47 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./navBar.css";
 
-const Navbar = () => {
+const Navbar = ({ setDefaultState }) => {
+  const handleClick = (event) => {
+    if (event.target.id == "home") {
+      setDefaultState("home");
+    } else if (event.target.id == "About") {
+      setDefaultState("About");
+    } else if (event.target.id == "B.tech") {
+      setDefaultState("B.tech");
+    }
+  };
+
   return (
     <div>
-      <div className="navbar">
-        <a href="#home">Home</a>
-        <div className="dropdown">
-          <button className="dropbtn">
+      <div className="navbars">
+        <a href="#home" id="home" onClick={handleClick}>
+          Home
+        </a>
+        <div className="dropdowns">
+          <button className="dropbtns">
             Course
-            <i className="fa fa-caret-down"></i>
+            <i className="fa fa-care-down"></i>
           </button>
-          <div className="dropdown-content">
-            <a href="#">B.Tech</a>
-            {/* <a href="#">BCA</a>
-            <a href="#">Law</a> */}
+          <div className="dropdown-contents">
+            <a href="#" id="B.tech" onClick={handleClick}>
+              B.Tech
+            </a>
+            <a href="#" id="BCA" onClick={handleClick}>
+              BCA
+            </a>
+            <a href="#" id="Law" onClick={handleClick}>
+              Law
+            </a>
           </div>
         </div>
-        <a href="#news">About Us!</a>
+        <a href="#news" id="About" onClick={handleClick}>
+          About Us!
+        </a>
       </div>
     </div>
   );
 };
-
 export default Navbar;

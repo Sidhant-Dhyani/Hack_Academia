@@ -1,0 +1,10 @@
+.year-main {
+  padding: 1rem;
+  margin-right: 5%;
+  color: var(--Black);
+  border: 2px solid var(--grey);
+  background-color: var(--backgroundBlack);
+  width: fit-content;
+  height: 60vh;
+  border-radius: 0 1rem 1rem 1rem;
+}
