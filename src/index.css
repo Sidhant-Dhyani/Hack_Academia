@@ -14,6 +14,6 @@
   background-color: var(--backgroundBlack);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--Black);
+  background-color: var(--lightBlack);
   border-radius: 5px;
 }

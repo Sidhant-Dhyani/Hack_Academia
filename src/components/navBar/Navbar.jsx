@@ -1,45 +1,31 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navBar.css";
 
-const Navbar = ({ setDefaultState }) => {
-  const handleClick = (event) => {
-    if (event.target.id == "home") {
-      setDefaultState("home");
-    } else if (event.target.id == "About") {
-      setDefaultState("About");
-    } else if (event.target.id == "B.tech") {
-      setDefaultState("B.tech");
-    }
-  };
-
+const Navbar = () => {
   return (
     <div>
       <div className="navbars">
-        <a href="#home" id="home" onClick={handleClick}>
-          Home
-        </a>
+        <Link to="/">Home</Link>
         <div className="dropdowns">
-          <button className="dropbtns">
-            Course
-            <i className="fa fa-care-down"></i>
-          </button>
+          <button className="dropbtns">Courses</button>
           <div className="dropdown-contents">
-            <a href="#" id="B.tech" onClick={handleClick}>
+            <Link to="B_tech" id="B.tech">
               B.Tech
-            </a>
-            <a href="#" id="BCA" onClick={handleClick}>
+            </Link>
+            <Link to="BCA" id="BCA">
               BCA
-            </a>
-            <a href="#" id="Law" onClick={handleClick}>
+            </Link>
+            <Link to="LAW" id="Law">
               Law
-            </a>
+            </Link>
           </div>
         </div>
-        <a href="#news" id="About" onClick={handleClick}>
+        <Link to="About" id="About">
           About Us!
-        </a>
+        </Link>
       </div>
     </div>
   );

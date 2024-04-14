@@ -2,9 +2,9 @@
   padding: 1rem;
   margin-right: 5%;
   color: var(--Black);
-  border: 4px solid var(--grey);
+  border: 4px solid var(--Black);
   background-color: var(--backgroundBlack);
-  box-shadow: 0 0 25px 1px rgb(104, 102, 102);
+  box-shadow: 0 0 25px 1px var(--Black);
   width: fit-content;
   height: 60vh;
   border-radius: 1rem;

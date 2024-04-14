@@ -4,14 +4,15 @@ import Head from "./components/Header/Header";
 import Nav from "./components/navBar/Navbar";
 import Mainsimple from "./components/mainsimple/Mainsimple";
 import "./App.css";
+import Upload from "./components/upload/UploadForm";
 
 function App() {
-  const [defaultState, setDefaultState] = useState("home");
   return (
     <div className="Components">
-      <Head />
-      <Nav setDefaultState={setDefaultState} />
-      <Mainsimple defaultState={defaultState} />
+      {/* <Head />
+      <Nav />
+      <Mainsimple /> */}
+      <Upload />
     </div>
   );
 }

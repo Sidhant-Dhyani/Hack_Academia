@@ -2,7 +2,8 @@
   margin-top: 3rem;
   border-radius: 1rem;
   width: 100%;
-  border-left: 22px solid var(--Black);
-  border-bottom: 22px solid var(--Black);
+  border-left: 15px solid var(--blackShadow);
+  border-right: 15px solid var(--blackShadow);
+  border-bottom: 18px solid var(--Black);
   background-color: var(--lightBlack);
 }
