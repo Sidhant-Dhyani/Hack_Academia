@@ -9,9 +9,6 @@ import Upload from "./components/upload/UploadForm";
 function App() {
   return (
     <div className="Components">
-      {/* <Head />
-      <Nav />
-      <Mainsimple /> */}
       <Upload />
     </div>
   );
